@@ -7,8 +7,12 @@ var logger = require('morgan');
 
 var router = require('./app_server/routes/index');
 var usersRouter = require('./app_server/routes/users');
+var apiRouter = require('./app_api/routes/index');
 
 var handlebars = require('hbs')
+
+//database
+require('./app_api/models/db');
 
 var app = express();
 
@@ -29,6 +33,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', router);
 app.use('/users', usersRouter);
+app.use('/api',apiRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
