@@ -3,13 +3,15 @@ import {trips} from "../data/trips";
 import {Trip} from "../models/trip";
 import {TripCard} from "../trip-card/trip-card";
 import {TripData} from "../services/trip-data";
+import { Authentication } from '../services/authentication';
+import { CommonModule } from '@angular/common';
 
 import {Router} from "@angular/router";
 
 
 @Component({
-  selector: 'app-trip-listing',
-  imports: [TripCard],
+  selector: 'app-trip-listing',   
+  imports: [CommonModule,TripCard],
   providers: [TripData],
   templateUrl: './trip-listing.html',
   styleUrl: './trip-listing.css'
@@ -21,6 +23,7 @@ export class TripListing implements OnInit{
   constructor (
     private tripDataService:TripData,
     private router:Router,
+    private authenticationService:Authentication,
   ){
     console.log("trip-listing constructor")
   }
@@ -48,5 +51,8 @@ export class TripListing implements OnInit{
   }
   public addTrip():void{
     this.router.navigate(['add-trip']);
+  }
+  public isLoggedIn(){
+    return this.authenticationService.isLoggedIn()
   }
 }
