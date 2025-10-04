@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 	<title>Dive Sites - Bhaccasyoniztas Beach Resort Website Template</title>
 	<link rel="stylesheet" href="css/style.css" type="text/css">
+  <script src="./scripts/cart_manager.js"></script>
 </head>
 <body>
 	<div id="background">
@@ -15,11 +16,16 @@
 					<div>
 						<div class="body">
 							<h1>Travel</h1>
+              <div class="cart">
+                <h2>Shopping Cart</h2>
+                <div class="cart-items" id="cart-items"></div>
+                <div class="cart-total" id="cart-total">Total: $0.00 per person</div>
+              </div>
 							<ul id="sites">
                 {{#each trips}}
-								<li>
-									<a href='/api/trips/{{this.code}}'><img src={{this.img}} alt="Img"></a>
-									<h2><a href="/travel">{{this.name}}</a></h2>
+								<li onclick="addToCart('{{this.name}}', {{this.perPerson}},'{{this.code}}')">
+									<img src={{this.img}} alt="Img">
+									<h2>{{this.name}}</h2>
 									<p>
 										{{this.desc}}
 									</p>

@@ -1,6 +1,20 @@
-# CS465-Full-Stack-Development
+# Travelr Web App
 
-## Architecture
+## Build instructions
+
+ 1. install node
+
+ 2. setup a mongodb cluster to run on your local machine or create one online and add its DB_HOST JWT_SECRET and PORT to a .env file
+
+ 3. clone this repo into a local folder
+
+ 4. run npm start in the root folder to start hosting the user client
+
+ 5. run npm start in the app_admin folder to start hosting the admin client.
+
+## CS465-Full-Stack-Development
+
+### Architecture
 
 #### Compare and contrast the types of frontend development you used in your full stack project, including Express HTML, JavaScript, and the single-page application (SPA).
 
@@ -11,7 +25,7 @@ The 2 frontend applications developed were made with html,handlebars and javascr
 
 The backend being made with MongoDB seems to be mostly due to being able to use json style data without needing to worry about sql querries or complex relational schema. If not for this good match between mongoDB and javascript, I don't think that the mongoDB would have made much sense at all over SQL style databases. I also believe that when deploying at scale with a server built in a more robust language converting from MongoDB to an SQL database or formatting the data to conform to MongoDB's style will be a technical hurdle. Since this app only seems to focus on travel bookings though, It's likely a fair decision to prioritize a low effort implimentation now over preparing for a future that may never come.
 
-## Functionality
+### Functionality
 
 #### How is JSON different from Javascript and how does JSON tie together the frontend and backend development pieces?
 
@@ -23,13 +37,13 @@ Most of my refactoring of the code in this code base revolved around congregatin
 
 
 
-## Testing
+### Testing
 
 #### Methods for request and retrieval necessitate various types of API testing of endpoints, in addition to the difficulties of testing with added layers of security. Explain your understanding of methods, endpoints, and security in a full stack application.
 
 Postman and Mongo Compass were very useful in configuring the server. By allowing for manual data entry as well as an easy way to emulate appropriate server requests, this testing setup was able to help in the development and delivery on clear goals for the project. I believe that configuring automated tests that leverage these tools would also be easy adding another layer of safety against errors in the software.
 
-## Reflection
+### Reflection
 
 #### How has this course helped you in reaching your professional goals? What skills have you learned, developed, or mastered in this course to help you become a more marketable candidate in your career field?
 
