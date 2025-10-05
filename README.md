@@ -8,9 +8,9 @@
 
  3. clone this repo into a local folder
 
- 4. run npm start in the root folder to start hosting the user client
+ 4. cd into the repo and run 'npm start' to start hosting the user client
 
- 5. run npm start in the app_admin folder to start hosting the admin client.
+ 5. cd into the app_admin folder and run 'npm start' to start hosting the admin client.
 
 ## CS465-Full-Stack-Development
 
