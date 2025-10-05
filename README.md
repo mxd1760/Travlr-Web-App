@@ -4,9 +4,11 @@
 
  1. install [nodejs](https://nodejs.org/en/download)
 
- 2. setup a [mongodb](https://www.mongodb.com/) cluster to run on your local machine or create one online and add its DB_HOST JWT_SECRET and PORT to a .env file
-
- 3. clone this repo into a local folder
+ 2.  clone this repo into a local folder
+ 
+ 3. setup a [mongodb](https://www.mongodb.com/) cluster to run
+     - the app searches your local machine by default
+     - it also supports a .env file with 'DB_HOST', 'JWT_SECRET', and 'PORT' values to help find your cluster.
 
  4. cd into the repo and run 'npm start' to start hosting the user client
 
