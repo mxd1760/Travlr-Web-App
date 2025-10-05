@@ -2,9 +2,9 @@
 
 ## Build instructions
 
- 1. install node
+ 1. install [nodejs](https://nodejs.org/en/download)
 
- 2. setup a mongodb cluster to run on your local machine or create one online and add its DB_HOST JWT_SECRET and PORT to a .env file
+ 2. setup a [mongodb](https://www.mongodb.com/) cluster to run on your local machine or create one online and add its DB_HOST JWT_SECRET and PORT to a .env file
 
  3. clone this repo into a local folder
 
