@@ -4,15 +4,15 @@
 
  1. install [nodejs](https://nodejs.org/en/download)
 
- 2.  clone this repo into a local folder
+ 2. clone this repo into a local folder
  
- 3. setup a [mongodb](https://www.mongodb.com/) cluster to run
+ 4. setup a [mongodb](https://www.mongodb.com/) cluster to run
      - the app searches your local machine by default
-     - it also supports a .env file with '[DB_HOST](https://www.mongodb.com/docs/manual/reference/connection-string/)', '[JWT_SECRET](https://www.mongodb.com/docs/atlas/app-services/authentication/custom-jwt/)', and '[PORT](https://www.mongodb.com/docs/manual/reference/connection-string/)' values to help find your cluster.
+     - it also supports a .env file with '[DB_HOST](https://www.mongodb.com/docs/manual/reference/connection-string/)', and '[PORT](https://www.mongodb.com/docs/manual/reference/connection-string/)' values to help find your cluster; as well as '[JWT_SECRET](https://www.mongodb.com/docs/atlas/app-services/authentication/custom-jwt/)' for security.
 
- 4. cd into the repo and run 'npm start' to start hosting the user client
+ 5. cd into the repo and run 'npm install' to configure dependencies, npm run db_seed' to setup tables in your cluster and then 'npm start' to start hosting the user client
 
- 5. cd into the app_admin folder and run 'npm start' to start hosting the admin client.
+ 6. cd into the app_admin folder and run 'npm start' to start hosting the admin client.
 
 ## CS465-Full-Stack-Development
 
