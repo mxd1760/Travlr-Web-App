@@ -8,7 +8,7 @@
  
  3. setup a [mongodb](https://www.mongodb.com/) cluster to run
      - the app searches your local machine by default
-     - it also supports a .env file with 'DB_HOST', 'JWT_SECRET', and 'PORT' values to help find your cluster.
+     - it also supports a .env file with '[DB_HOST](https://www.mongodb.com/docs/manual/reference/connection-string/)', '[JWT_SECRET](https://www.mongodb.com/docs/atlas/app-services/authentication/custom-jwt/)', and '[PORT](https://www.mongodb.com/docs/manual/reference/connection-string/)' values to help find your cluster.
 
  4. cd into the repo and run 'npm start' to start hosting the user client
 
