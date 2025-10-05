@@ -2,15 +2,17 @@
 
 ## Build instructions
 
- 1. install node
+ 1. install [nodejs](https://nodejs.org/en/download)
 
- 2. setup a mongodb cluster to run on your local machine or create one online and add its DB_HOST JWT_SECRET and PORT to a .env file
+ 2.  clone this repo into a local folder
+ 
+ 3. setup a [mongodb](https://www.mongodb.com/) cluster to run
+     - the app searches your local machine by default
+     - it also supports a .env file with '[DB_HOST](https://www.mongodb.com/docs/manual/reference/connection-string/)', '[JWT_SECRET](https://www.mongodb.com/docs/atlas/app-services/authentication/custom-jwt/)', and '[PORT](https://www.mongodb.com/docs/manual/reference/connection-string/)' values to help find your cluster.
 
- 3. clone this repo into a local folder
+ 4. cd into the repo and run 'npm start' to start hosting the user client
 
- 4. run npm start in the root folder to start hosting the user client
-
- 5. run npm start in the app_admin folder to start hosting the admin client.
+ 5. cd into the app_admin folder and run 'npm start' to start hosting the admin client.
 
 ## CS465-Full-Stack-Development
 
